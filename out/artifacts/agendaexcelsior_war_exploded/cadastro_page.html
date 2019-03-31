@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title>Cadastrar</title>
+        <meta charset=utf-8>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+        <link rel ="stylesheet" href="Css/index.css">
+        <link rel ="stylesheet" href="Css/cadastro_page.css">
+        
+        <body>
+            <aside class="top_menu">
+                <nav class="navegation-menu">
+                    <ul>
+                        <li><a href="adm_page.html">Inicio</a></li>
+                        <li><a href="cadastro_page.html">Cadastrar Funcionário</a></li>
+                        <li><a href="">Editar Agenda</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Ajuda</a></li>
+                    </ul>
+                    <div class ="login">
+                        <li><a href="login_page.html">Sair</a></li>
+                        <!--or
+                        <li><a href=""></a></li>-->
+                    </div>
+                    <div class="cadastrar_funcionario">
+                        <h2 class="subtitle">Cadastrar Funcionário</h2>
+                    </div>
+                    
+                    <form action="/agendaexcelsior/cadastrarFuncionario" method="post">
+                        <div class="divFomr">
+                            <label class="lName" for="nome">Nome Completo:</label></br>
+                            <input class="inputName" type="text" name="nome"></br></br>
+                            <label for="funcao">Setor: </label></br>
+                            <select>
+                                <option value="telefonista">Telefonista</option>
+                                <option value="portaria">Portaria</option>
+                                <option value="manobrista">Manobrista</option>
+                                <option value="juridico">Juridico</option>
+                                <option value="controle">Controles Internos</option>
+                                <option value="compliance">Compliance</option>
+                                <option value="dpvat">DPVAT</option>
+                                <option value="diretoria">Diretoria/Comercial</option>
+                                <option value="controladoria">Controladoria</option>
+                                <option value="contabilidade">Contabilidade/Fiscal</option>
+                                <option value="provisoes">Provisoes</option>
+                                <option value="dpvat2">DPVAT2</option>
+                                <option value="pessoas">Pessoas e RC</option>
+                                <option value="resseguro">Resseguro/Cosseguro</option>
+                                <option value="un">UN Patrimonial</option>
+                                <option value="rh">RH</option>
+                                <option value="administrativo">Administrativo</option>
+                                <option value="financeiro">Financeiro</option>
+                                 <option value="diretoriaT">Diretoria Técnica</option>
+                                 <option value="ti">T.I</option>
+                                <option value="projeto">Projetos</option>
+                                <option value="copa">Copa</option>
+                                <option value="arquivo">Arquivo</option>
+                                <option value="filiais">Filiais/Representações</option>
+                            </select>
+                            </br></br>
+                            <label for="ramal">Ramal:</label></br>
+                            <input class="inputForm" type="text" name="login"></br>
+                            <input class="button "type="submit" name="enviar" value="Cadastrar">
+                        </div>
+                    </form>
+                </nav>
+            </aside>  
+        </body>
+    </head>
+</html>

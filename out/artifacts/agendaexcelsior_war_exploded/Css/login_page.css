@@ -1,0 +1,61 @@
+.boxlogin{
+	border: 1px solid;
+	background: #2f3640;
+	margin-top: 5%;
+	margin-left: 25%;
+	padding: 60px;
+	border-radius: 10px;
+	width: 45%;
+	height: 190px;
+	color: #ecf0f1;
+}
+
+.inputL{
+	outline: none;
+	border-radius: 5px;
+	border: none;
+	padding: 5px;
+	width: 150px;
+}
+
+.inputS{
+	margin-left: 10px;
+	outline: none;
+	border-radius: 5px;
+	border: none;
+	padding: 5px;
+	width: 150px;
+}
+
+.barralogin{
+	width: 362px;
+	height: 10px;
+	margin-left: 40%; 
+	border-radius: 2px;
+	margin-top: -9px;
+	background: #81ecec;
+
+}
+
+.button{
+	margin-left: 250px;
+	margin-top: 80px;
+	padding: 3px;
+	width: 100px;
+	background: #ecf0f1;
+	color: #34495e;
+	border:none;
+	height: 25px;
+	cursor: pointer;
+}
+.esqueceSenha{
+    margin-left: 230px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.esqueceSenha a{
+    color: #ecf0f1;
+    outline: none;
+}
+

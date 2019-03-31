@@ -1,0 +1,32 @@
+/*table{
+    background: #f7d794;
+    border: 1px solid #bdc3c7;
+    border-radius: 10px;
+}*/
+table{
+    margin-top: 35px;
+    border: 1px solid #ecf0f1;
+    border-radius: 10px;
+    background: #ecf0f1;
+    margin-left: 27%;
+    padding: 10px;
+    width: 50%;
+}
+
+th{
+    font-size: 20px;
+    color: #2c3e50;
+    background: #f7d794;
+    border-radius: 5px;
+    margin: 0px;
+    width: 125px;
+    padding: 5px;
+
+}
+
+td{
+    border: 1px solid #ecf0f1;
+    border-radius: 5px;
+    text-align: center;
+    padding: 7px;
+}

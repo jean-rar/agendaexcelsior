@@ -1,0 +1,117 @@
+body{
+    margin:0;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+.navegation-menu{
+    text-align: center;
+    border: 2px solid #f7d794;
+    background: #2f3640;
+    width: 100%;
+    height: 60px;
+    
+}
+
+.top_menu{
+    width: 100%;
+    height: 70px;
+    background: #f7d794;
+}
+
+.navegation-menu ul{
+    list-style: none;
+    
+}
+
+.navegation-menu a{
+    outline: none;
+    text-decoration: none;
+    color: #f5f6fa;
+}
+
+.navegation-menu li{
+    font-size: 18px;
+    display:inline;
+    padding:15px 26px 3px 26px;
+    background:#2f3640;
+    transition: all 0.2s;
+    
+}
+
+.navegation-menu li:hover {
+    border-bottom: 4px solid #f7d794;
+}
+
+.login ul{
+    list-style: none;
+}
+
+.login a{
+    outline: none;
+    color: #f5f6fa;
+}
+
+.login {
+    margin-top: -30px;
+    margin-left: 80%;
+    width: 230px;
+    height: 23px;
+    color: #636e72;
+}
+
+.login li{
+    font-size: 15px;
+    display:inline;
+    padding:5px 7px 3px 7px;
+    background:#2f3640;
+    transition: all 0.2s;
+}
+
+
+.login li:hover {
+    border-bottom: 3px solid #81ecec;
+}
+
+.aside_side{
+    position: absolute;
+    margin-left: 2px;
+    width: 225px;
+    height: 125%;
+    background-color: #2f3640;
+    color: #f5f6fa;
+    margin-top: -9px;
+}
+
+
+
+.aside_side a{
+    display: block;
+    text-decoration: none;
+    color: #f5f6fa;
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+.aside_side li:hover {
+    background: #4b6584;
+    border-left: 15px solid #f7d794;
+}
+
+.barra_pesquisa{
+	background: #f7d794;
+
+}
+#txtBusca{
+	border: 1px solid #bdc3c7;
+	border-radius: 8px;
+	margin-left: 41%;
+	outline: none;
+	text-decoration: none;
+	padding: 6px;
+	width: 350px;
+}
+
+

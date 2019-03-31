@@ -1,0 +1,54 @@
+body{
+    align-items: center;
+}
+
+.cadastrar_funcionario{
+    background: #f7d794;
+    margin-top: 23px;
+    border-radius: 10px;
+    width: 500px;
+    margin-left: 30%;
+    padding: 1px;
+    
+}
+
+.subtitle{
+    margin-top: 30px;
+}
+
+form{
+    border: 1px solid #f7d794;
+    border-radius: 10px;
+    width: 500px;
+    height: 400px;
+    margin-left: 50%;
+}
+.inputName{
+    width: 400px;
+}
+
+.divFomr{
+    margin-top: 50px;
+}
+
+input{
+    margin-top: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.button{
+    margin-top: 80px;
+    width: 250px;
+    background: #2c3e50;
+    color: #ecf0f1;
+    border:none;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    border-bottom: 4px solid #f7d794;
+}
