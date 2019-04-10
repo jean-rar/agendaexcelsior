@@ -29,12 +29,12 @@
                         <h2 class="subtitle">Cadastrar Funcionário</h2>
                     </div>
                     
-                    <form action="/agendaexcelsior/cadastrarFuncionario" method="post">
+                    <form action="cadastrarFuncionario" method="POST">
                         <div class="divFomr">
                             <label class="lName" for="nome">Nome Completo:</label></br>
-                            <input class="inputName" type="text" name="nome"></br></br>
+                            <input class="inputName" type="text" name="nomeFuncionario"></br></br>
                             <label for="funcao">Setor: </label></br>
-                            <select>
+                            <select name = "nomeSetor">
                                 <option value="telefonista">Telefonista</option>
                                 <option value="portaria">Portaria</option>
                                 <option value="manobrista">Manobrista</option>
@@ -53,16 +53,18 @@
                                 <option value="rh">RH</option>
                                 <option value="administrativo">Administrativo</option>
                                 <option value="financeiro">Financeiro</option>
-                                 <option value="diretoriaT">Diretoria Técnica</option>
-                                 <option value="ti">T.I</option>
+                                <option value="diretoriaT">Diretoria Técnica</option>
+                                <option value="ti">T.I</option>
                                 <option value="projeto">Projetos</option>
                                 <option value="copa">Copa</option>
                                 <option value="arquivo">Arquivo</option>
                                 <option value="filiais">Filiais/Representações</option>
                             </select>
                             </br></br>
+                            <label for="andar">Aandar:</label></br>
+                            <input class="inputForm" type="text" name="nomeAndar"></br>
                             <label for="ramal">Ramal:</label></br>
-                            <input class="inputForm" type="text" name="login"></br>
+                            <input class="inputForm" type="text" name="numeroRamal"></br>
                             <input class="button "type="submit" name="enviar" value="Cadastrar">
                         </div>
                     </form>
