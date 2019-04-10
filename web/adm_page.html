@@ -3,11 +3,12 @@
     
     <head>
         
-        <title>Initial_Page</title>
+        <title>Cadastrar</title>
         <meta charset=utf-8>
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
         <link rel ="stylesheet" href="Css/index.css">
+        <link rel ="stylesheet" href="Css/cadastro_page.css">
         
         <body>
             <aside class="top_menu">
@@ -20,48 +21,55 @@
                         <li><a href="">Ajuda</a></li>
                     </ul>
                     <div class ="login">
-                        <li><a href="index.html">Sair</a></li>
+                        <li><a href="login_page.html">Sair</a></li>
                         <!--or
                         <li><a href=""></a></li>-->
                     </div>
+                    <div class="cadastrar_funcionario">
+                        <h2 class="subtitle">Cadastrar Funcionário</h2>
+                    </div>
+                    
+                    <form action="cadastrarFuncionario" method="POST">
+                        <div class="divFomr">
+                            <label class="lName" for="nome">Nome Completo:</label></br>
+                            <input class="inputName" type="text" name="nomeFuncionario"></br></br>
+                            <label for="funcao">Setor: </label></br>
+                            <select name = "nomeSetor">
+                                <option value="telefonista">Telefonista</option>
+                                <option value="portaria">Portaria</option>
+                                <option value="manobrista">Manobrista</option>
+                                <option value="juridico">Juridico</option>
+                                <option value="controle">Controles Internos</option>
+                                <option value="compliance">Compliance</option>
+                                <option value="dpvat">DPVAT</option>
+                                <option value="diretoria">Diretoria/Comercial</option>
+                                <option value="controladoria">Controladoria</option>
+                                <option value="contabilidade">Contabilidade/Fiscal</option>
+                                <option value="provisoes">Provisoes</option>
+                                <option value="dpvat2">DPVAT2</option>
+                                <option value="pessoas">Pessoas e RC</option>
+                                <option value="resseguro">Resseguro/Cosseguro</option>
+                                <option value="un">UN Patrimonial</option>
+                                <option value="rh">RH</option>
+                                <option value="administrativo">Administrativo</option>
+                                <option value="financeiro">Financeiro</option>
+                                <option value="diretoriaT">Diretoria Técnica</option>
+                                <option value="ti">T.I</option>
+                                <option value="projeto">Projetos</option>
+                                <option value="copa">Copa</option>
+                                <option value="arquivo">Arquivo</option>
+                                <option value="filiais">Filiais/Representações</option>
+                            </select>
+                            </br></br>
+                            <label for="andar">Aandar:</label></br>
+                            <input class="inputForm" type="text" name="nomeAndar"></br>
+                            <label for="ramal">Ramal:</label></br>
+                            <input class="inputForm" type="text" name="numeroRamal"></br>
+                            <input class="button "type="submit" name="enviar" value="Cadastrar">
+                        </div>
+                    </form>
                 </nav>
             </aside>  
-
-             <aside class="aside_side">
-                    <nav class="side_menu">
-                        <ul>
-                            <li><a href="Telefonista.html">Telefonista</a></li>
-                            <li><a href="">Portaria</a></li>
-                            <li><a href="">Manobrista</a></li>
-                            <li><a href="">Jurídico</a></li>
-                            <li><a href="">Controles Internos</a></li>
-                            <li><a href="">Compliance</a></li>
-                            <li><a href="">DPVAT</a></li>
-                            <li><a href="">Diretoria/Comercial</a></li>
-                            <li><a href="">Controladoria</a></li>
-                            <li><a href="">Contabilidade/Fiscal</a></li>
-                            <li><a href="">Provisões</a></li>
-                            <li><a href="">DPVAT2</a></li>
-                            <li><a href="">Pessoas e RC</a></li>
-                            <li><a href="">Resseguro/Cosseguro</a></li>
-                            <li><a href="">UN Patrimonial</a></li>
-                            <li><a href="">RH</a></li>
-                            <li><a href="">Administrativo</a></li>
-                            <li><a href="">Financeiro</a></li>
-                            <li><a href="">Diretoria Técnica</a></li>
-                            <li><a href="">T.I</a></li>
-                            <li><a href="">Projetos</a></li>
-                            <li><a href="">Copa</a></li>
-                            <li><a href="">Arquivo</a></li>
-                            <li><a href="">Filiais/Representações</a></li>
-                        </ul>
-                    </nav>
-                </aside>
-                <div class="barra_pesquisa">
-                    <input type="text" id="txtBusca" placeholder="Pesquisar ramal..."/>
-                </div>  
         </body>
-        
     </head>
-    
 </html>
