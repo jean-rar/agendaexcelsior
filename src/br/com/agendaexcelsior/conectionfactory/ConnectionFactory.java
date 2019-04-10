@@ -1,21 +1,19 @@
 package br.com.agendaexcelsior.conectionfactory;
 
 import java.sql.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.sql.Connection;
 
-public class ConectionFactory {
+public class ConnectionFactory {
 
-    private final String DRIVER = "com.mysql.jdbc.Driver";
-    private final String URL = "jdbc:mysql://localhost:3306/Agenda";
-    private final String USER = "root";
-    private final String PASS = "localhost";
+    private static final String DRIVER = "com.mysql.jdbc.Driver";
+    private static final String URL = "jdbc:mysql://localhost:3306/Agenda";
+    private static final String USER = "root";
+    private static final String PASS = "localhost";
 
-    public Connection getConnection(){
+    public static Connection getConnection(){
         try {
             Class.forName(DRIVER);
             return DriverManager.getConnection(URL, USER, PASS);
-
         } catch (ClassNotFoundException | SQLException ex) {
             throw new  RuntimeException("Erro na conexão: ", ex);
         }
@@ -26,39 +24,32 @@ public class ConectionFactory {
             if(connection != null){
                 connection.close();
             }
-
         } catch (SQLException ex) {
-            Logger.getLogger(ConectionFactory.class.getName()).log(Level.SEVERE, null, ex);
+            System.err.println("ERRO: " + ex);
         }
-
     }
 
     public static void closeConnection(Connection connection, PreparedStatement statement){
-
-        closeConnection(connection);
         try {
-
             if(statement!=null){
                 statement.close();
             }
 
         } catch (SQLException ex) {
-            Logger.getLogger(ConectionFactory.class.getName()).log(Level.SEVERE, null, ex);
+            System.err.println("ERRO: " + ex);
         }
-
+        closeConnection(connection);
     }
-    public static void closeConnection(Connection connection, PreparedStatement statement, ResultSet resultSet){
 
-        closeConnection(connection, statement);
+    public static void closeConnection(Connection connection, PreparedStatement statement, ResultSet resultSet){
         try {
             if(resultSet != null){
                 resultSet.close();
             }
 
         } catch (SQLException ex) {
-            Logger.getLogger(ConectionFactory.class.getName()).log(Level.SEVERE, null, ex);
+            System.err.println("ERRO: " + ex);
         }
-
+        closeConnection(connection, statement);
     }
-
 }

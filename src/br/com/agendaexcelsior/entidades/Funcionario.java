@@ -4,8 +4,16 @@ public class Funcionario {
     private int id;
     private String nome;
     private String ramal;
-    private String departamento;
-    private String andar;
+//    private String departamento;
+//    private String andar;
+
+    public Funcionario (){}
+    public Funcionario(String nome, String ramal) {
+        this.nome = nome;
+        this.ramal = ramal;
+//        this.departamento = departamento;
+//        this.andar = andar;
+    }
 
 
     public int getId() {
@@ -32,19 +40,19 @@ public class Funcionario {
         this.ramal = ramal;
     }
 
-    public String getDepartamento() {
-        return departamento;
-    }
-
-    public void setDepartamento(String departamento) {
-        this.departamento = departamento;
-    }
-
-    public String getAndar() {
-        return andar;
-    }
-
-    public void setAndar(String andar) {
-        this.andar = andar;
-    }
+//    public String getDepartamento() {
+//        return departamento;
+//    }
+//
+//    public void setDepartamento(String departamento) {
+//        this.departamento = departamento;
+//    }
+//
+//    public String getAndar() {
+//        return andar;
+//    }
+//
+//    public void setAndar(String andar) {
+//        this.andar = andar;
+//    }
 }
